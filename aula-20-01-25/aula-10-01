@@ -1,0 +1,55 @@
+Algorítimo -> sequencia de ações para resolver um problema
+Variáveis -> é um espaço da memória que vai designar uma informação
+eu quero que o usuário informe uma senha:
+senha = input('Digite sua senha')
+nome = 'shellen'
+
+Tipos primitivos:
+string (recebe um nome)
+int (recebe um numero inteir)
+float (recebe um valor real)
+boleano (quando tem alguma pergunta)
+
+Condições -> a condição para executar uma ação, exemplo, abrir um pote de amendoim
+Se tiver chovendo pegar o guarda chuva
+
+= // atribuição
+== para compara
+print(17 == 17)
+print('17' == 17)
+print(15<12)
+dinheros = 1000
+print(altura + 2)
+print(dinheros * 2)
+print(dinheros / 2)
+print(dinheros ** 2) // potenciação
+
+Resto 
+4/2 = resto 0
+5/2 = resto 1
+quando preciso encontrar algum valor que preciso recuperar o valor 0, ano bisexto tem que ser divisível por 4...
+imprimir valores multiplosde 3
+Um ano é bissexto se for divisível por 4.
+Mas não será bissexto se for divisível por 100, exceto se for também divisível por 400.
+    if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):
+
+print(5 % 2)
+print(8 % 2) //potenciação
+
+print(7//2) //divisão inteira
+
+sobrenome = " she"
+print(nome + sobrenome) // soma variáveis do tipo str faz com que elas "grudem" ou melhor dizendo concatena
+
+primeiro = 'ba'
+segundo = 'nana'
+print(primeiro + segundo)  // soma variáveis do tipo str faz com que elas "grudem" ou melhor dizendo concatena
+
+print(primeiro * 10)
+
+idade = int(input('Informe sua idade'))
+if idade >= 16:
+    print('Vc pode vota')
+else:
+    print('vc ainda não pode votar')
+
