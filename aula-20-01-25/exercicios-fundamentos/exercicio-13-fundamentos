@@ -1,1 +1,6 @@
+# Definindo uma variável
+variavel = 5  # Tente mudar este valor para 0, "", None, etc.
+
+# Exibindo o valor lógico da variável
+print(bool(variavel))
 
