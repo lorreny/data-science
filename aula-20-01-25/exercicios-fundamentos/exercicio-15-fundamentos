@@ -1,0 +1,5 @@
+
+# 15 - Crie um algoritmo que exiba na tela (terminal) o tipo de uma variável cujo valor atribuído é "c".
+letra = "c"
+print(f"O valor atribído é {letra}")
+
