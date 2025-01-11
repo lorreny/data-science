@@ -1,1 +1,12 @@
+# 7  - Crie um algoritmo que exiba na tela (terminal) a subtração de dois números inteiros.
+print("Para fazermos a subtração, favor informe os números")
+num1 = int(input("Informe o primeiro número: "))
+num2 = int(input("Informe o segundo número: "))
+total = num1 - num2
+print(f"A subtração é {total}")
+
+#Para subtração (algoritmo 7):
+#Números: 10 e 4
+#Exemplo de subtração: 10 - 4 = 6
+
 
