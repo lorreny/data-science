@@ -1,17 +1,33 @@
 #Estrutura sintática de for
 amigos = ['Bruno', 'Amanda', 'Rodrigo', 'Júlio']
+i = 0
+while i < len(amigos):
+    print(amigos[i])
+    i+=1
+----------------------------------------
 
 #for elemento em conjuntos
 for amigo in amigos:
     print(amigo.upper())
+----------------------------------------
 
 #entrou no loop
 while True:
     print(amigos)
-    
+
+#len extensão da lista
 i = 0
 while i < len(amigos):
     print(amigos[i])
+
+----------------------------------------
+
+#len extensão da lista
+i = 0
+while i < len(amigos):
+    print(amigos[i])
+    i+=1
+
 #Exercicio 36 - lista
 
 palavra = input('Digite uma palavra: ')
