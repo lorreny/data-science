@@ -11,3 +11,27 @@ letra = 'A'
 for nome in nomes:
     if nome.startswith(letra):  # Verifica se o nome começa com a letra escolhida
         print(nome)
+
+
+Claro! Vou te dar um exemplo básico de como usar o for para iterar sobre uma lista e verificar uma condição. Isso te ajudará a entender como estruturar seu código.
+
+Exemplo de uso do for:
+Suponha que você tenha uma lista de nomes e quer verificar se algum nome começa com a letra "A":
+
+python
+Copiar
+nomes = ['Ana', 'Julia', 'Pedro', 'Amanda', 'Carlos']
+letra = 'A'
+
+# Usando o for para percorrer cada nome na lista
+for nome in nomes:
+    if nome.startswith(letra):  # Verifica se o nome começa com a letra escolhida
+        print(nome)
+Explicação:
+for nome in nomes:: O for percorre cada elemento da lista nomes e armazena o valor de cada elemento em nome durante cada iteração.
+if nome.startswith(letra):: Verifica se o nome começa com a letra fornecida. Nesse caso, a função startswith() é usada para verificar isso.
+print(nome): Se a condição for verdadeira (ou seja, o nome começa com a letra "A"), ele imprime o nome.
+Esse exemplo ilustra o uso básico de um for para iterar sobre uma lista e fazer uma verificação condicional. Tente adaptar isso para o seu exercício!
+
+
+
