@@ -1,7 +1,9 @@
-# 2: Dada a seguinte lista:
-# animais = ["foca", "golfinho", "leão", "tartaruga"]
-# Crie um algoritmo que imprima o primeiro e o último item da lista.
+# 1: Crie um algoritmo que, ao declararmos uma lista com o nome de três amigos, imprima:
+# o nome do primeiro amigo
+# o nome do segundo amigo
+# o nome do terceiro amigo
 
-animais = ["foca", "golfinho", "leão", "tartaruga"]
-print(animais[0])
-print(animais[-1])
+amigos = ['Bruno', 'Amanda', 'Rodrigo']
+for amigo in amigos:
+    print(amigo)
+
