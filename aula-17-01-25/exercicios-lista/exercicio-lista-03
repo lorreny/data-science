@@ -1,0 +1,6 @@
+# 3: Crie uma lista que contenha um valor do tipo string, um valor do tipo real,
+# um valor do tipo inteiro e um valor do tipo booleano
+# imprima cada um desses valores separadamente.
+
+lista = ['string', 0.2, 3, True]
+print(f"O valor da string é {lista[0]}, tipo real {lista[1]}, tipo inteiro {lista[2]}, valor boleano {lista[3]}")
