@@ -1,0 +1,15 @@
+# 1 - Crie um algoritmo que receba um número e imprima no terminal todos os valores em ordem crescente até o valor do número informado.
+# Ex: n = 5, a saída no terminal devera ser:
+# 1
+# 2
+# 3
+# 4
+# 5
+
+n = int(input("Informe um número: "))
+
+i = 0
+
+while i <= n:
+    print(i)
+    i += 1
