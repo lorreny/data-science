@@ -1,0 +1,13 @@
+# 4 - Crie um algoritmo que recebe 5 nomes e imprime no terminal todos aqueles iniciados em uma letra à sua escolha:
+# Ex: 'Ana', 'Julia', 'Pedro', 'Amanda' , letra = "A", a saída no terminal dever ser:
+# Ana
+# Amanda
+# Obs: Se atentem para o uso de letras maiúsculas ou minúsculas
+
+nomes = ['Ana', 'Julia', 'Pedro', 'Amanda', 'Carlos']
+letra = 'A'
+
+# Usando o for para percorrer cada nome na lista
+for nome in nomes:
+    if nome.startswith(letra):  # Verifica se o nome começa com a letra escolhida
+        print(nome)
