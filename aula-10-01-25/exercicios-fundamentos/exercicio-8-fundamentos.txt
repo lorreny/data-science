@@ -1,0 +1,12 @@
+# 8  - Crie um algoritmo que exiba na tela (terminal) a multiplicação de dois números inteiros.
+print("Para fazermos a multiplicação, favor informe os números")
+num1 = int(input("Informe o primeiro número: "))
+num2 = int(input("Informe o segundo número: "))
+total = num1 * num2
+print(f"A multiplicação é {total}")
+
+
+#Para multiplicação (algoritmo 8):
+#Números: 7 e 2
+#Exemplo de multiplicação: 7 * 2 = 14
+

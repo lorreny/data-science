@@ -1,0 +1,5 @@
+
+# 14 - Crie um algoritmo que exiba na tela (terminal) o tipo de uma variável cujo valor atribuído é "jpaulo@infinityschoool.com.br".
+email = "jpaulo@infinityschoool.com.br"
+print(f"O email é {email}")
+

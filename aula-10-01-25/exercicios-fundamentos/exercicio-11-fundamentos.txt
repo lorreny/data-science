@@ -1,0 +1,12 @@
+# 11 - Crie um algoritmo que exiba na tela (terminal) apenas a parte inteira de uma divisão de dois números inteiros.
+print("Para temos o resultado apenas da parte inteira de uma divisão, favor informe os números")
+num1 = int(input("Informe o primeiro número: "))
+num2 = int(input("Informe o segundo número: "))
+total = num1 // num2
+print(f"O resultado da parte inteira é {total}")
+
+
+#Para parte inteira da divisão (algoritmo 11):
+#Números: 10 e 3
+#Exemplo de parte inteira: 10 // 3 = 3
+

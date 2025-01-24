@@ -1,0 +1,7 @@
+# 20 - Crie um algoritmo que concatene dois numeros inteiros ao ser executado. Exiba os números concatenados na tela (terminal).
+print("Informe os números para serem concatenados")
+num1 = input("Informe o primeiro número: ")
+num2 = input("Informe o segundo número: ")
+print("Valor concatenado: ")
+print('O número concatenado é ' + num1 + ' ' + num2)
+print(f"O número concatenado é {num1} {num2}")

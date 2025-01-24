@@ -1,0 +1,4 @@
+# 3  - Crie um algoritmo que exiba na tela (terminal) sua idade. Por exemplo: 17.
+
+idade = int(input("Informe sua idade: "))
+print(f"A sua idade é: {idade}")

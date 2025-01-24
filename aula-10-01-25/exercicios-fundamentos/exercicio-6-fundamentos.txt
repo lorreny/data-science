@@ -1,0 +1,11 @@
+# 6  - Crie um algoritmo que exiba na tela (terminal) a soma de dois números inteiros.
+
+print("Para fazermos a soma, favor informe os números")
+num1 = int(input("Informe o primeiro número: "))
+num2 = int(input("Informe o segundo número: "))
+total = num1 + num2
+print(f"A soma é {total}")
+
+#Para soma (algoritmo 6):
+#Números: 5 e 3
+#Exemplo de soma: 5 + 3 = 8

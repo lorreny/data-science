@@ -1,0 +1,12 @@
+# 12 - Crie um algoritmo que exiba na tela (terminal) o quadrado de um número inteiro.
+print("Para temos o quadrado de um número inteiro, favor informe os números")
+num1 = int(input("Informe o primeiro número: "))
+num2 = int(input("Informe o segundo número: "))
+total = num1 ** num2
+print(f"O resultado da parte inteira é {total}")
+
+
+#Para o quadrado de um número (algoritmo 12):
+#Número: 4
+#Exemplo de quadrado: 4² = 16
+
