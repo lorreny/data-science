@@ -1,8 +1,11 @@
-
 # 2: Dada a seguinte lista:
 # animais = ["foca", "golfinho", "leão", "tartaruga"]
 # Crie um algoritmo que imprima o primeiro e o último item da lista.
 
 animais = ["foca", "golfinho", "leão", "tartaruga"]
+print(animais[0])
+print(animais[-1])
+
+print('1° item da lista: ', animais[0], '----' ' Último item da lista: ', animais[-1])
 print(animais[0])
 print(animais[-1])
