@@ -1,8 +1,0 @@
-
-# 19 - Crie um algoritmo que concatene duas strings ao ser executado. Exiba a string concatenada na tela (terminal).
-nome = input("Informe seu nome: ")
-sobrenome = input("Informe seu sobrenome: ")
-print("Valor concatenado: ")
-print(nome + ' ' + sobrenome)
-print(f"O seu nome completo é {nome} {sobrenome}")
-

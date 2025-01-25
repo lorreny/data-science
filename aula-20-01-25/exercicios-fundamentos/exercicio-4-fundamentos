@@ -1,5 +1,0 @@
-# 4  - Crie um algoritmo que exiba na tela (terminal) (em linhas separadas) seu nome e sua idade.
-
-nome = input("Informe seu nome: ")
-idade = int(input("Informe sua idade: "))
-print(f"Seu nome é {nome}\nsua idade é {idade}")

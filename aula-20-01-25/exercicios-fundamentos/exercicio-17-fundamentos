@@ -1,4 +1,0 @@
-# 17 - Crie um algoritmo que exiba na tela (terminal) o tipo de uma variável cujo valor atribuído é 1.87.
-float = 1.87
-print(f"O valor atribído é {float}")
-

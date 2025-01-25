@@ -1,3 +1,0 @@
-# 18 - Crie um algoritmo que exiba na tela (terminal) o tipo de uma variável cujo valor atribuído é False.
-comparar = '17' == 17
-print(comparar)
