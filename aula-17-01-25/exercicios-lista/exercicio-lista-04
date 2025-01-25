@@ -1,1 +1,47 @@
+# 4: Crie um algoritmo que lê uma lista contendo as notas bimestrais de um estudante e imprime 
+# a média das notas desse estudante.
 
+notas = []
+
+nota1 = int(input('Informe a primeira nota: '))
+#usa o append para adicionar na lista
+notas.append(nota1)
+
+nota2 = int(input('Informe a segunda nota: '))
+#usa o append para adicionar na lista
+notas.append(nota2)
+
+nota3 = int(input('Informe a segunda nota: '))
+#usa o append para adicionar na lista
+notas.append(nota3)
+
+nota4 = int(input('Informe a segunda nota: '))
+#usa o append para adicionar na lista
+notas.append(nota4)
+
+print('Notas adicionadas: ', notas)
+
+soma = sum(notas)
+
+media = soma / 4
+
+print('A média das notas é de: ', media)
+
+
+##########
+# Criando a lista para armazenar as 4 notas
+notas = []
+
+# Lendo as 4 notas
+for i in range(4):
+    nota = int(input(f'Informe a nota do {i+1}º bimestre: '))
+    notas.append(nota)
+
+# Calculando a soma das notas
+soma = sum(notas)
+
+# Calculando a média
+media = soma / len(notas)
+
+# Exibindo o resultado
+print(f'A média das notas bimestrais é: {media}')
