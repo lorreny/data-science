@@ -4,7 +4,7 @@
 #entre 18 e 70 o voto é obrigatório
 
 #>	Maior que	Verdadeiro se o valor à esquerda exceder o valor à direita
-#<	Menor que	Verdadeiro se o valor à esquerda for menor que o valor à direita
+#<	Menor que	Verdadeiro se o valor à esquerda for menor que o valor à direitaz
 
 idade = int(input("Informe a sua idade: "))
 
