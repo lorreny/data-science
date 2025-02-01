@@ -1,0 +1,73 @@
+#Desafio: 
+#1° Parte:
+#Crie um menu de funcionamento contínuo, que simula uma lista de tarefas;
+
+#Exemplo de saída:
+
+#'Bem vindo à Lista de Tarefas'
+#'Escolha sua ação:'
+#'1 - Adicionar tarefa'
+#'2 - Ver tarefas'
+#'3 - Remover tarefa'
+#'4 - Sair'
+
+
+print("Bem bindo à lista de tarefas")
+print("Escolha sua ação")
+print("1 - Adicionar tarefa")
+print("2 - Ver tarefas")
+print("3 - Remover tarefa")
+print("4 - Sair")
+
+opcao = int(input('Qual a sua escolha? '))
+
+while True:
+    if opcao == 1:
+        print('adicionar')
+    elif opcao == 2:
+        print('ver')
+    elif opcao == 3:
+        print('remover')
+    else:
+        print('Você saiu do sistema')
+    break
+
+#2° Criar a funcionalidade de sair: 
+#Capture a escolha escolha do usuário;
+#Caso ela sair, interrompa a execução.
+
+
+#3° Crie a funcionalidade de adicionar tarefas;
+
+
+#4° Crie a funcionalidade de listar tarefas;
+
+
+#5° Crie a funcionalidade de remover tarefas;
+
+Você está muito próximo, mas ainda precisa de alguns ajustes para garantir que o programa funcione corretamente de forma contínua até que o usuário escolha a opção de sair. Vou explicar o que precisa ser modificado.
+
+O que está acontecendo:
+Captura da opção do usuário: Você captura a opção fora do loop. Isso não vai funcionar como esperado porque, dentro do loop, a opção não é atualizada após cada iteração, o que significa que o menu só será exibido uma vez.
+
+Uso do break: Você está chamando o break dentro do else, o que vai interromper o loop imediatamente. Porém, o loop deve continuar até que a opção "4" seja escolhida, e não quando qualquer outra opção for escolhida.
+
+Como ajustar:
+Captura da opção dentro do loop: O input() e a captura da opção do usuário devem estar dentro do loop, para que o menu seja exibido a cada iteração, permitindo ao usuário escolher outra opção após cada ação (adicionar tarefa, ver tarefas, remover tarefa, etc).
+
+Repetir o menu: O menu precisa ser exibido novamente dentro do loop após cada ação, como "adicionar", "ver" ou "remover" tarefas.
+
+Sair: O break deve ser chamado somente quando o usuário escolher a opção 4. Não é necessário usar break em outras opções.
+
+Como modificar seu código:
+Mostrar o menu dentro do loop.
+Capturar a opção dentro do loop.
+Adicionar as funcionalidades de adicionar, ver e remover tarefas.
+Usar o break para sair do loop apenas quando a opção 4 for escolhida.
+Agora, a estrutura correta seria assim:
+
+Exiba o menu continuamente até o usuário escolher a opção "Sair".
+Ao escolher "Sair", use break para sair do loop.
+O que ajustar:
+Capturar a entrada dentro do loop para garantir que o menu seja exibido após cada ação.
+Repetir o menu após cada escolha, a menos que a escolha seja a opção de sair.
