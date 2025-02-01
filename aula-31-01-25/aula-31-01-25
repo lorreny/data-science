@@ -1,1 +1,71 @@
+Welcome Back Intruders!!! xD
 
+
+repositório de aulas:
+https://github.com/thiagooshiro/python-classes
+
+
+# Listas (revisão)
+amigos = ['Rodrigo', 'Joana', 'Luzia', 'Bruno', 'Raquel', 'João']
+
+
+amigos.append('Cecília')  # Adiciona novo valor ao final da lista
+# print('Append', amigos)
+amigos.pop(0) # Remove valor da lista, se informado o índice será o valor do índice, caso contrário, será o último valor da lista
+# print('Pop', amigos)
+
+x = amigos.copy() # O método copy cria uma cópia real da lista, ou seja, ela não será alterada por alterações feitas na original.
+
+y = amigos  # Cópia rasa, será alterada por qualquer alteração na lista original.
+amigos.pop(0)
+
+# print('x', x)
+# print('amigos', amigos)
+# print('y',y)
+
+primos = ['Mariana', 'Gustavo', 'Matheus']
+amigos.extend(primos) # Extende a lista amigos com os valores da lista primos.
+
+# print(amigos)
+
+
+numeros = [1, 2, 3, 4, 5]
+
+amigos.remove('Gustavo') # Método remove, remove um valor especifico da lista.
+numeros.remove(3)
+
+amigos.insert(1, 'Thiago') # Método insert, insere um novo valor anterior ao índice informado.
+
+print(amigos)
+
+amigos.reverse()
+print(amigos)
+
+amigos.sort() # Ordena uma lista por em crescente, caso parametro reverse seja true, a ordem fica invertida... (Esse método é mais complexo)
+
+
+amigos.clear()  # Remove os valores da lista
+
+
+
+Desafio: 
+1° Parte:
+Crie um menu de funcionamento contínuo, que simula uma lista de tarefas;
+
+Exemplo de saída:
+
+'Bem vindo à Lista de Tarefas'
+'Escolha sua ação:'
+'1 - Adicionar tarefa'
+'2 - Ver tarefas'
+'3 - Remover tarefa'
+'4 - Sair'
+
+
+
+2° Criar a funcionalidade de sair: 
+Capture a escolha escolha do usuário;
+Caso ela sair, interrompa a execução.
+3° Crie a funcionalidade de adicionar tarefas;
+4° Crie a funcionalidade de listar tarefas;
+5° Crie a funcionalidade de remover tarefas;
