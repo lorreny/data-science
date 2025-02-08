@@ -1,0 +1,85 @@
+#Desafio: 
+#1° Parte:
+#Crie um menu de funcionamento contínuo, que simula uma lista de tarefas;
+
+#Exemplo de saída:
+
+#'Bem vindo à Lista de Tarefas'
+#'Escolha sua ação:'
+#'1 - Adicionar tarefa'
+#'2 - Ver tarefas'
+#'3 - Remover tarefa'
+#'4 - Sair'
+
+# minha falha eu coloquei os prints fora do while, as escolhas devem ser dentro do while
+#Lista de tarefas: Ao invés de tarefa = {}, você deve inicializar uma lista: tarefas = [].
+
+tarefas = [] #Lista de tarefas: Como você quer armazenar múltiplas tarefas, a estrutura principal será uma lista
+#Dicionário de tarefa: Cada tarefa individual será representada por um dicionário. Esse dicionário vai ter as chaves e valores, como nome, categoria, e feito
+tarefa = {}   # Precisa existir uma estrutura de dicionário
+feito = True
+print("Bem bindo à lista de tarefas")
+# Adicionando chaves e alterando valores de dicionários:
+
+
+
+while True:
+    print("Escolha sua ação")
+    print("1 - Adicionar tarefa")
+    print("2 - Ver tarefas")
+    print("3 - Remover tarefa")
+    print("4 - Sair")
+    opcao = int(input('Qual a sua escolha? '))
+
+    
+    if opcao == 1:
+        print('adicionar')
+        nome_tarefa = input('Informe a sua tarefa: ')
+        categoria = input('Informe a categoria que ela pertence: ')
+        tarefa['nome'] = nome_tarefa
+        tarefa['categoria'] = categoria
+        while True:
+            feito = input('Tarefa feita ou não (sim/não): ').strip().lower()
+
+            if feito == 'sim':
+                feito = True
+                tarefa['feito'] = feito
+                tarefas.append(tarefa) 
+                print(f'Você adicionou o seguinte item:{tarefa}')
+                opcao = int(input('Qual a sua escolha? '))
+
+            elif feito == 'não':
+                feito = False
+                tarefa['feito'] = feito
+                tarefas.append(tarefa) 
+                print(f'Você adicionou o seguinte item:{tarefa}')
+                opcao = int(input('Qual a sua escolha? '))
+
+            else:
+                print("Resposta inválida, por favor digite 'sim' ou 'não'.")
+                # Aqui você pode voltar a perguntar, se preferir
+            break
+    elif opcao == 2:
+        print('ver')
+        print(tarefa)
+
+    elif opcao == 3:
+        print('remover')
+    else:
+        print('Você saiu do sistema')
+    break
+
+
+
+#2° Criar a funcionalidade de sair: 
+#Capture a escolha escolha do usuário;
+#Caso ela sair, interrompa a execução.
+
+
+#3° Crie a funcionalidade de adicionar tarefas;
+
+
+#4° Crie a funcionalidade de listar tarefas;
+
+
+#5° Crie a funcionalidade de remover tarefas;
