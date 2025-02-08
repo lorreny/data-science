@@ -1,1 +1,178 @@
-aula
+Dontpad:
+dfs6200702
+
+Repositório de aulas:
+https://github.com/thiagooshiro/python-classes
+
+
+# Tuplas
+
+lista = [
+    ('Thiago', 'F1'),
+    ('Joana', 'F2'),
+    ('Carlos', 'F3'),
+    ('Ana', 'F4'),
+    ('Miguel', 'F5'),
+    ('Juliana', 'F6'),
+    ('Rafael', 'F7'),
+    ('Laura', 'F8'),
+    ('Bruno', 'F9'),
+    ('Paula', 'F10'),
+    ('Ricardo', 'F11'),
+    ('Fernanda', 'F12'),
+    ('Jorge', 'F13'),
+    ('Camila', 'F14'),
+    ('Vinícius', 'F15'),
+    ('Isabela', 'F16'),
+    ('Felipe', 'F17'),
+    ('Carla', 'F18'),
+    ('Luiz', 'F19'),
+    ('Renata', 'F20'),
+    ('Eduardo', 'F21'),
+    ('Patrícia', 'F22'),
+    ('Lucas', 'F23'),
+    ('Gabriela', 'F24'),
+    ('Marcelo', 'F25'),
+    ('Sandra', 'F26'),
+    ('Fábio', 'F27'),
+    ('Tatiane', 'F28'),
+    ('Cláudio', 'F29'),
+    ('Mariana', 'F30'),
+    ('Bruna', 'F34')
+]
+
+pessoa =  ('Thiago', 'F1'),
+
+for i in pessoa:
+    print(i)
+
+
+for nome, lugar in lista:
+    print(nome[0])
+    print(lugar)
+
+# Dicionários
+
+estudante = {
+    "nome": "Thiago",
+    "idade": 36,
+    "matricula": '14AB',
+    "brasileiro": True,
+    "cursos": ['História', 'Python', 'Inglês']
+}
+
+print(estudante['nome'])
+print(estudante.get('credito'))
+
+print(estudante['cursos'][0])
+
+estudantes = [
+    {
+        "nome": "Thiago",
+        "idade": 36,
+        "matricula": '14AB',
+        "brasileiro": True,
+        "cursos": ['História', 'Python', 'Inglês']
+    },
+    {
+        "nome": "Maria",
+        "idade": 22,
+        "matricula": '15CD',
+        "brasileiro": True,
+        "cursos": ['Matemática', 'Filosofia']
+    },
+    {
+        "nome": "Carlos",
+        "idade": 28,
+        "matricula": '16EF',
+        "brasileiro": True,
+        "cursos": ['Sociologia']
+    },
+    {
+        "nome": "Ana",
+        "idade": 24,
+        "matricula": '17GH',
+        "brasileiro": False,
+        "cursos": ['Biologia', 'Química']
+    },
+    {
+        "nome": "João",
+        "idade": 30,
+        "matricula": '18IJ',
+        "brasileiro": True,
+        "cursos": ['Geografia', 'Física']
+    },
+    {
+        "nome": "Lucas",
+        "idade": 25,
+        "matricula": '19KL',
+        "brasileiro": True,
+        "cursos": ['Literatura', 'Informática']
+    },
+    {
+        "nome": "Fernanda",
+        "idade": 32,
+        "matricula": '20MN',
+        "brasileiro": False,
+        "cursos": ['Psicologia', 'Arte']
+    },
+    {
+        "nome": "Roberta",
+        "idade": 27,
+        "matricula": '21OP',
+        "brasileiro": True,
+        "cursos": ['Educação Física', 'Matemática']
+    },
+    {
+        "nome": "Carlos Eduardo",
+        "idade": 29,
+        "matricula": '22QR',
+        "brasileiro": True,
+        "cursos": ['Engenharia', 'Física']
+    },
+    {
+        "nome": "Juliana",
+        "idade": 23,
+        "matricula": '23ST',
+        "brasileiro": True,
+        "cursos": ['Direito', 'História']
+    }
+]
+
+
+for est in estudantes:
+    print(est['nome'])
+    print(est['matricula'])
+    
+    if len(est['cursos']) > 1:
+        print(est['cursos'][1])
+    else:
+        ' '
+
+# Adicionando chaves e alterando valores de dicionários:
+tarefa = {}   # Precisa existir uma estrutura de dicionário
+ 
+
+nome = input('Digite o nome da tarefa: ')
+
+tarefa['nome'] = nome     # Se a propriedade nome não existir no dicionário ela é criada, caso já exista seu valor é reatribuido;
+tarefa['categoria'] = 'saúde'
+tarefa['feito'] = False
+
+print(tarefa)
+
+
+# Sets
+
+dias = { 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta' }
+
+# for dia in dias:
+#     print(dia)
+
+Exercício:
+
+Implemente as funcionalidades de adicionar, listar e remover tarefas;
+
+A estrutura de uma tarefa é a seguinte:
+
+tarefa { 'nome': 'nome da tarefa', 'categoria': 'categoria da tarefa', 'feito', True ou False } 
