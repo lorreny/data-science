@@ -1,0 +1,79 @@
+#variavel
+nome="shellen"
+print('shellen')
+print(nome)
+numero = input('digite um numero: ')
+
+nome = 'amanda'
+
+print(numero + nome)
+
+#tipos de dados
+sobrenome = 'gonzaga' #tipo de string
+status = True #tipo boleano
+idade = 35 #tipo inteir
+altura = 1.54 #ele não aceita virgura e sim ponto 1,5 tipo float
+
+#com o type consigo identificar o tipo da variável
+print(type(altura))
+
+#tipos avançados de dados:
+amigos = ['Marcos', 'Daniel', 'Joice', 'Flávio'] #lista
+estudante = {
+    "nome": "Júlia",
+    "ano": "3° ano",
+    "cursos": ['Redação', 'matemática', 'Geografia'],
+    "idade": 10,
+    "matricula ativa": True
+
+}#dicionario, o dicionário aceita todos os tipos de dados
+estudante['brasileiro'] = True #so funciona com dicionarios existentes
+estudante['nome']='maria'
+print(estudante)
+
+#tupla é o primo meio estranho
+lugar_no_aviao = ('João', 'F4', 42, True, ['Matematica', 'Português'])
+print(lugar_no_aviao[0])
+print(lugar_no_aviao[4][0])
+
+lugar_no_aviao_1 = ('João', 'F4', 42)
+nome, lugar, idade = lugar_no_aviao_1 #desempacota
+print(nome, lugar, idade)
+
+
+#set usado em casos específicos
+#dicionário com lista
+dias_da_semana = {'segunda', 'terça', 'quarta', 'quinta', 'sexta'}
+dias_da_semana.add('segunda')
+#não consigo indexar
+print(dias_da_semana[0])
+
+---------------
+#condicionais
+
+#Estruturas condicionais que realizam uma condição para comparação
+
+#if
+algura = 1.30
+if algura < 1.50:
+    print('Infelizmente você nao pode entrar nesse brinquedo')
+else:
+    print('Entrada autorizada, boa diversão')
+
+numero = 9
+if numero > 0:
+    print('o numero é positivo')
+elif numero < 0:
+    print('o número é negativo')
+else:
+    print('o número é igual a 0')
+
+login = 'banana@email.com'
+email = 'teste'
+
+#com and a condição precisa ser verdadeira, condição exclusiva
+if login == 'infinity@school.com.br' and senha == '123':
+    print('seja bem vindo')
+else:
+    print('login ou senha incorretos')
+    
