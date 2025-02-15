@@ -1,0 +1,21 @@
+# Exercício 6: Crie um programa que determina se um ano dado é bissexto. 
+# Um ano bissexto é divisível por 4, mas não é divisível por 100, a menos que também seja divisível por 400.
+
+ano = int(input('Informe o ano para saber se ele é bissexto: '))
+
+if (ano % 4 == 0 and ano % 100 != 0) or ano % 400 == 0:
+#errei aqui
+#if ano % 4 == 0 and ano % 100 == 0 or ano % 400 == 0:
+    print('O ano é bissexto')
+else:
+    print('O ano não é bisexto')
+
+# Ano bissexto:
+# 2020 (divisível por 4, não divisível por 100)
+# 2000 (divisível por 400)
+# 1600 (divisível por 400)
+# Ano não bissexto:
+# 2021 (não divisível por 4)
+# 1900 (divisível por 100, mas não por 400)
+# 2100 (divisível por 100, mas não por 400)
+# 2022 (não divisível por 4)
