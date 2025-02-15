@@ -1,0 +1,15 @@
+# Exercício 7: Crie um programa que recebe como entrada a altura, profissão e nome de um individuo e: 
+# Se o nome for Alice e a altura for 169, exiba a mensagem: "Suspeito encontrado"
+# Se o nome for Douglas ou Rafael e a profissão começar com a letra C, exiba a mensagem: "Suspeito encontrado"
+# Se o nome encontrado for Thiago e a profissão for 'Professor', exiba mensagem: Suspeito encontrado!
+
+altura = float(input("Informe sua altura: "))
+profissao = input("Informe sua profissão: ")
+nome = input("Informe seu nome: ")
+
+if nome.lower() == "alice" and altura == 169:
+    print("Suspeito encontrado")
+elif (nome.lower() == "Douglas" or nome == "Rafael") and profissao[0].lower() == "C":
+    print("Suspeito encontrado")
+else:
+    print("Nenhum suspeito encontrado")  
