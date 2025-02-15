@@ -1,0 +1,15 @@
+# Exercício 1: Escreva um programa que recebe dois números como entrada e imprime o maior deles.
+
+#Se num1 é menor que num2, então num2 é maior.
+#Se num1 é maior que num2, então num1 é o maior.
+#Se num1 é igual a num2, você pode adicionar uma lógica para tratar isso.
+
+num1 = int(input('Informe o primeiro número: '))
+num2 = int(input('Informe o segundo número: '))
+
+if num1 < num2:
+    print(f'O maior número é o {num2}')
+elif num1 > num2:
+    print(f'O maior número é o {num1}')
+else:
+    print(f'Os números são iguais')
