@@ -1,0 +1,25 @@
+# Exercício 3: Escreva um programa que solicita a idade do usuário e determina se ele é elegível para votar (18 anos ou mais).
+#O sinal de menor (<) significa que o valor à esquerda é menor do que o valor à direita.
+#Exemplo: num1 < num2 significa que num1 é menor que num2.
+#O sinal de maior (>) significa que o valor à esquerda é maior do que o valor à direita.
+#Exemplo: num1 > num2 significa que num1 é maior que num2.
+#Seu código está quase certo, mas tem um pequeno ajuste que pode ser feito. O elif que verifica se a idade é maior que 18 não é necessário, porque se a idade for maior que 18, o primeiro if já foi descartado e a única possibilidade que sobra é que a idade seja 18 (e, portanto, já pode votar).
+#Sugestões de melhorias:
+#Evitar o elif e usar apenas else:
+#Como o único caso restante (quando a idade não é menor que 18) é quando a pessoa tem 18 anos exatos, você pode substituir o elif por um simples else. O código vai ficar mais limpo e mais fácil de entender.
+#Revisar as mensagens:
+#As mensagens estão boas, mas pode ser interessante ajustar o tom para um pouco mais formal ou direto dependendo do contexto do programa, especialmente em um contexto de aplicativos que lidam com informações públicas, como idade.
+#Considerar o caso da pessoa com 18 anos:
+#Sua verificação está correta, mas você pode dar mais clareza ao feedback sobre o 18º aniversário. Algo como "Você já tem 18 anos, pode votar!" deixaria claro que quem tem exatamente 18 anos também é elegível.
+#Considerar validações:
+#Poderia ser interessante adicionar uma validação para garantir que a entrada seja uma idade válida (por exemplo, garantir que o usuário não digite algo negativo ou não numérico).
+
+
+idade = int(input("Iforme sua idade: "))
+
+if idade < 18:
+    print('Você é menor de 18 anos, não pode votar')
+elif idade > 18:
+    print('Que coisa boa, você já pode votar')
+else:
+    print('Parabéns, bem na hora já pode votar')
