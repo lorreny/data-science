@@ -1,1 +1,82 @@
+Laços de Repetição 
 
+Conceitos:
+
+# Sintaxes comuns do loop While:
+
+# Condição definida externamente, comparação com condição explícita
+condicao = 'João'
+while condicao != 'Alice':
+    print(condicao)
+    condicao = input('Qual seu nome!?')
+
+
+
+# Loop infinito com condição associada ao break para interromper o loop
+while True:
+    print('Escolha sua opção: ')
+    print('1 - banana')
+    print('2 - uva')
+    print('3 - sair')
+
+    escolha = input('Digite sua escolha: ')
+    if escolha == '3':
+        break
+    else:
+        print('Esdcolha invalida, tente novamente')
+
+
+
+#Sintaxes mais comuns do loop for:
+
+#Utilizando range para criar um pseudo-conjunto que funciona como uma lista.
+for n in range(1, 51): 
+    print(n)
+
+# Para cada elemento de um conjunto definido:
+for suspeito in suspeitos:
+    print(suspeito)
+
+palavra = 'Abobora'
+
+for letra in palavra:
+    print(letra)
+
+
+Exemplos:
+
+# O que é um laço de repetição?
+
+# Repetir o mesmo conjunto de ações até que uma condição seja cumprida
+
+# Quando precisamos de um laço de repetição?
+
+convidados = [
+    "Ana", "João", "Maria", "Carlos", "Fernanda", "Pedro", "Lucas", "Marta", "Ricardo", "Patrícia",
+    "Rafael", "Carla", "Tiago", "Juliana", "Paulo", "Roberta", "Gustavo", "Raquel", "Felipe", "Renata",
+    "Bruno", "Camila", "Eduardo", "Vanessa", "José", "Larissa", "Gabriel", "Letícia", "Ricardo", "Isabela",
+    "Aline", "Marcelo", "Sofia", "Rogério", "Débora", "Felipe", "Jéssica", "André", "Larissa", "Fábio",
+    "Eliane", "Vitor", "Beatriz", "Douglas", "Simone", "Nathalia", "Caio", "Luciana", "José", "Isis",
+    "Marcela", "Gustavo", "Cristina", "Júlio", "Amanda", "Danilo", "Bruna", "Walter", "Nicole", "Gabriela",
+    "Alexandre", "Heloísa", "Lúcia", "Mário", "Rafael", "Paula", "Marcos", "Tatiane", "Rodrigo", "Caroline",
+    "Vânia", "Diego", "Patrícia", "Guilherme", "Cecília", "Victor", "Renato", "Sabrina", "Mariana", "Eduardo",
+    "Simone", "Robson", "Thais", "Ricardo", "Cláudia", "Felipe", "Aline", "Fábio", "André", "Tânia",
+    "Luciano", "Sérgio", "Joana", "Natan", "Sueli", "Catarina", "Jorge", "Priscila", "Larissa", "Sílvia",
+    "Marília", "Juliano", "Patrícia", "Marcio", "Bruna", "Fernanda", "Anderson", "Célia", "Adriana", "Rita",
+    "Daniele", "Leandro", "Adriano", "Vera", "Luciana", "Renata", "William", "Rafael", "Milena", "Aline"
+]
+
+# Fila convidados inacabavel...
+while True:
+    convidado = input('Qual seu nome:')
+    if convidado in convidados:
+        print('Seja bem vindo!!!!!!')
+    else:
+        print('=(')
+    
+    fila = input('Ainda tem mais gente pra entrar?')
+
+    if fila != 'sim':
+        break
+
+suspeitos = ['Mário', 'João', 'Pedro', 'Otávio']
