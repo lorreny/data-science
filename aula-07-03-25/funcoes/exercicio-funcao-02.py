@@ -6,6 +6,6 @@ def subtracao(a, b):
     result = a - b
     return result
 
-num1 = int(input("Informe o primeiro numero para soma: "))
-num2 = int(input("Informe o segundo numero para soma: "))
+num1 = int(input("Informe o primeiro numero para subtrair: "))
+num2 = int(input("Informe o segundo numero para subtrair: "))
 print(subtracao(num1, num2))
