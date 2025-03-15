@@ -1,1 +1,336 @@
+dontpad: dfs6201403
 
+repostiório das aulas: https://github.com/thiagooshiro/python-classes=
+
+Boa noite Pessoal Tudo Bem ? Marcos Monitor de vocês aqui esses dois links são do grupo do whatsapp da nossa turma ;) 
+
+obs ja marcaram presença ? o tokken de hoje é 2632 
+
+https://chat.whatsapp.com/GPc8C2vYMHU0Er5hcWVAeE
+
+pip install qrcode[pil]
+
+
+Lista 1:
+
+# 1. Função de soma
+# Crie uma função chamada 'soma' que recebe dois números como parâmetros e retorna a soma deles.
+# A função deve aceitar dois números e retornar o resultado da soma entre eles.
+
+# 2. Função de subtração
+# Crie uma função chamada 'subtrair' que recebe dois números e retorna a diferença entre o primeiro e o segundo.
+# A função deve retornar a subtração de 'b' de 'a', ou seja, a - b.
+
+# 3. Função de multiplicação
+# Crie uma função chamada 'multiplicar' que recebe dois números e retorna o produto deles.
+# A função deve retornar o valor da multiplicação entre os dois números passados como parâmetros.
+
+# 4. Função de divisão
+# Crie uma função chamada 'dividir' que recebe dois números e retorna o quociente da divisão.
+# A função deve realizar a divisão de 'a' por 'b', mas é importante verificar se o divisor 'b' é zero.
+# Se for zero, a função deve retornar uma mensagem de erro ou um valor indicativo (ex: "Erro: Divisão por zero").
+
+# 5. Função de número par ou ímpar
+# Crie uma função chamada 'verificar_par' que recebe um número e retorna 'True' se o número for par,
+# e 'False' caso contrário. A função pode usar o operador módulo (%) para verificar se o número é divisível por 2.
+
+# 6. Função de maior número
+# Crie uma função chamada 'maior_numero' que recebe três números e retorna o maior deles.
+# A função deve comparar os três valores e retornar o maior deles.
+
+# 7. Função de média
+# Crie uma função chamada 'calcular_media' que recebe uma lista de números e retorna a média deles.
+# A função deve somar todos os números da lista e dividir pelo total de elementos na lista.
+
+# 8. Função de fatorial
+# Crie uma função chamada 'fatorial' que recebe um número e retorna o fatorial desse número.
+# O fatorial de um número 'n' é o produto de todos os números inteiros de 1 até 'n' (exemplo: fatorial de 4 é 4 * 3 * 2 * 1).
+
+# 9. Função de contar caracteres
+# Crie uma função chamada 'contar_caracteres' que recebe uma string e retorna o número de caracteres dessa string.
+# A função pode usar a função embutida 'len()' para contar os caracteres da string.
+
+# 10. Função de somar lista
+# Crie uma função chamada 'somar_lista' que recebe uma lista de números e retorna a soma de todos os números dessa lista.
+# A função pode iterar sobre a lista e somar os elementos ou utilizar a função 'sum()' para realizar a soma de maneira mais eficiente.
+
+
+
+Lista 2:
+
+## Para os exercícios com listas utilize como exemplo essas listas a seguir, você tem liberdade para criar suas próprias, mas sempre teste também com essas:
+lista_1 = [-10, 5, -3, 7, 2, -1, 8, -4]
+lista_2 = [0, -1, 6, -3, 9, -7, 4, -8]
+lista_3 = [3, 9, -2, -5, 6, 0, -8, 7]
+lista_4 = [10, 4, 55, 21, 7]
+lista_5 = [15, 23, 8, 45, 12]
+lista_6 = [1, 2, 3, 4, 5]
+
+
+# 1. Verificar se um número é par ou ímpar
+# Crie uma função chamada 'verificar_par_ou_impar' que recebe um número e retorna uma mensagem dizendo se ele é par ou ímpar.
+# Utilize a função 'verificar_par' criada no exercício anterior para realizar essa verificação.
+# A mensagem que a função deve retornar deve ser do tipo:
+# "Esse número é par" se for par
+# "Esse número é ímpar" se for ímpar
+
+# 2. Verificar se um número é positivo ou negativo
+# Crie uma função chamada 'verificar_negativo' que recebe um número e retorna True se o número for negativo e False se for positivo.
+# Utilize essa função para verificar se um número é positivo ou negativo e exibir a mensagem apropriada.
+
+# 3. Verificar se um número é primo
+# Crie uma função chamada 'verificar_primo' que recebe um número e retorna True se o número for primo e False caso contrário.
+# Lembre-se que um número primo é um número maior que 1 que só pode ser dividido por 1 e por ele mesmo.
+# Teste a função com alguns números.
+
+# 4. Calcular a média de uma lista de números
+# Crie uma função chamada 'calcular_media' que recebe uma lista de números e retorna a média desses números.
+# A média é calculada somando todos os números e dividindo pela quantidade de números na lista.
+
+# 5. Contar quantos números são positivos em uma lista
+# Crie uma função chamada 'contar_positivos' que recebe uma lista de números e retorna a quantidade de números positivos na lista.
+# Utilize a função 'verificar_negativo' para contar os números positivos.
+
+# 6. Verificar se um número é maior que a média de uma lista
+# Crie uma função chamada 'verificar_maior_que_media' que recebe um número e uma lista de números e verifica se o número é maior que a média da lista.
+# Utilize a função 'calcular_media' para calcular a média da lista.
+
+# 7. Encontrar o menor número em uma lista
+# Crie uma função chamada 'encontrar_menor' que recebe uma lista de números e retorna o menor número da lista.
+
+
+# 8. Verificar se um número é par ou ímpar e imprimir a mensagem correta
+# Crie uma função chamada 'verificar_par_ou_impar' que recebe um número e imprime:
+# "Esse número é par" se o número for par,
+# "Esse número é ímpar" se for ímpar,
+# E se o número for primo, imprime "Esse número é primo".
+
+# 9. Encontrar o maior número em uma lista
+# Crie uma função chamada 'encontrar_maior' que recebe uma lista de números e retorna o maior número da lista.
+# Lembre-se de comparar os números entre si para encontrar o maior valor.
+# Teste a sua função com as seguintes listas:
+# Lista 1: [10, 4, 55, 21, 7]
+# Lista 2: [15, 23, 8, 45, 12]
+# Lista 3: [1, 2, 3, 4, 5]
+# A função deve retornar o maior número de cada lista.
+
+# 10. Criar uma nova lista com os números positivos
+# Crie uma função chamada 'filtrar_positivos' que recebe uma lista de números e retorna uma nova lista contendo apenas os números positivos.
+# Utilize a função 'verificar_negativo' para filtrar os números positivos da lista.
+# Teste a sua função com as seguintes listas:
+# Lista 1: [-10, 5, -3, 7, 2, -1, 8, -4]
+# Lista 2: [0, -1, 6, -3, 9, -7, 4, -8]
+# Lista 3: [3, 9, -2, -5, 6, 0, -8, 7]
+
+
+
+RESOLUÇÃO:
+
+
+# 8. Função de fatorial
+# Crie uma função chamada 'fatorial' que recebe um número e retorna o fatorial desse número.
+# O fatorial de um número 'n' é o produto de todos os números inteiros de 1 até 'n' (exemplo: fatorial de 4 é 4 * 3 * 2 * 1).
+
+def fatorial(numero):
+    resultado = 1
+    while numero > 1:
+        resultado = resultado * numero
+        numero -= 1
+
+    return resultado
+print(fatorial(4))
+
+
+def fatorial_for(num):
+    produto = 1
+    for i in range(1, num + 1):
+        produto = produto * i
+        
+    return produto
+
+
+
+# 7. Função de média
+# Crie uma função chamada 'calcular_media' que recebe uma lista de números e retorna a média deles.
+# A função deve somar todos os números da lista e dividir pelo total de elementos na lista.
+lista_1 = [-10, 5, -3, 7, 2, -1, 8, -4]
+
+
+def calcular_media(lista_num):
+    somatorio = 0
+    for valor in lista_num:
+        somatorio += valor
+
+    media = somatorio / len(lista_num)
+    print(somatorio)
+
+    return media
+
+
+print(calcular_media(lista_1))
+
+
+EXERCÍCIOS (FUNÇÕES):
+
+DICIONÁRIO DE ESTUDANTES:
+
+estudantes = [
+    {
+        'nome': 'Aline',
+        'sobrenome': 'Camargo',
+        'data_de_nascimento': '22/07/1999',
+        'matricula': 'A4043-2011',
+        'cursos': ['História', 'Filosofia', 'Computação', 'Inglês']
+    },
+    {
+        'nome': 'Bruna',
+        'sobrenome': 'Souza',
+        'data_de_nascimento': '15/09/2000',
+        'matricula': 'B5678-2012',
+        'cursos': ['Matemática', 'Física', 'Química']
+    },
+    {
+        'nome': 'Carlos',
+        'sobrenome': 'Silva',
+        'data_de_nascimento': '02/03/1998',
+        'matricula': 'C1234-2010',
+        'cursos': ['Engenharia', 'Física', 'Química']
+    },
+    {
+        'nome': 'Daniela',
+        'sobrenome': 'Oliveira',
+        'data_de_nascimento': '10/12/2001',
+        'matricula': 'D2345-2013',
+        'cursos': ['Arquitetura', 'Design', 'Matemática']
+    },
+    {
+        'nome': 'Eduardo',
+        'sobrenome': 'Pereira',
+        'data_de_nascimento': '04/11/1999',
+        'matricula': 'E9876-2011',
+        'cursos': ['Administração', 'Economia']
+    },
+    {
+        'nome': 'Fernanda',
+        'sobrenome': 'Martins',
+        'data_de_nascimento': '21/06/2000',
+        'matricula': 'F1234-2012',
+        'cursos': ['Direito', 'Sociologia', 'Filosofia']
+    },
+    {
+        'nome': 'Gustavo',
+        'sobrenome': 'Costa',
+        'data_de_nascimento': '11/08/1998',
+        'matricula': 'G6543-2010',
+        'cursos': ['Tecnologia', 'Matemática', 'Engenharia']
+    },
+    {
+        'nome': 'Helena',
+        'sobrenome': 'Ribeiro',
+        'data_de_nascimento': '30/05/2002',
+        'matricula': 'H7890-2013',
+        'cursos': ['Psicologia', 'Filosofia']
+    },
+    {
+        'nome': 'Igor',
+        'sobrenome': 'Ferreira',
+        'data_de_nascimento': '14/04/1997',
+        'matricula': 'I5432-2009',
+        'cursos': ['Administração', 'Gestão de Recursos Humanos']
+    },
+    {
+        'nome': 'Joana',
+        'sobrenome': 'Lima',
+        'data_de_nascimento': '09/02/2001',
+        'matricula': 'J6789-2012',
+        'cursos': ['Biologia', 'Medicina']
+    },
+    {
+        'nome': 'Kleber',
+        'sobrenome': 'Alves',
+        'data_de_nascimento': '25/03/2000',
+        'matricula': 'K2345-2012',
+        'cursos': ['Geografia', 'História']
+    },
+    {
+        'nome': 'Lúcia',
+        'sobrenome': 'Nunes',
+        'data_de_nascimento': '06/07/1999',
+        'matricula': 'L1234-2011',
+        'cursos': ['Literatura', 'Filosofia']
+    },
+    {
+        'nome': 'Marcos',
+        'sobrenome': 'Gomes',
+        'data_de_nascimento': '01/01/1998',
+        'matricula': 'M9876-2010',
+        'cursos': ['Engenharia', 'Física']
+    },
+    {
+        'nome': 'Nathália',
+        'sobrenome': 'Costa',
+        'data_de_nascimento': '19/10/2001',
+        'matricula': 'N1234-2013',
+        'cursos': ['Design', 'Moda']
+    },
+    {
+        'nome': 'Otávio',
+        'sobrenome': 'Santos',
+        'data_de_nascimento': '12/11/1998',
+        'matricula': 'O9876-2010',
+        'cursos': ['Sistemas de Informação', 'Matemática']
+    },
+    {
+        'nome': 'Patrícia',
+        'sobrenome': 'Oliveira',
+        'data_de_nascimento': '27/09/2000',
+        'matricula': 'P3456-2012',
+        'cursos': ['Arquitetura', 'Design']
+    },
+    {
+        'nome': 'Quélvia',
+        'sobrenome': 'Freitas',
+        'data_de_nascimento': '05/05/2000',
+        'matricula': 'Q4567-2012',
+        'cursos': ['Psicologia', 'Sociologia']
+    },
+    {
+        'nome': 'Rafael',
+        'sobrenome': 'Dias',
+        'data_de_nascimento': '29/12/1999',
+        'matricula': 'R8765-2011',
+        'cursos': ['Administração', 'Economia']
+    },
+    {
+        'nome': 'Sabrina',
+        'sobrenome': 'Silveira',
+        'data_de_nascimento': '07/03/2001',
+        'matricula': 'S6543-2012',
+        'cursos': ['Medicina', 'Enfermagem']
+    },
+    {
+        'nome': 'Tiago',
+        'sobrenome': 'Pinto',
+        'data_de_nascimento': '20/06/1998',
+        'matricula': 'T1234-2010',
+        'cursos': ['Ciência da Computação', 'Engenharia']
+    }
+]
+
+
+
+Exercício 1: Filtrar Estudantes por Curso(s)
+Objetivo: Criar uma função para filtrar estudantes que estão matriculados em pelo menos um dos cursos informados.
+Função: filtrar_por_cursos(estudantes, cursos)
+
+Exercício 2: Filtrar Estudantes por Data de Nascimento (Depois de uma Data)
+Objetivo: Criar uma função para filtrar estudantes que nasceram depois da data informada.
+Função: filtrar_por_data_nascimento_depois(estudantes, data)
+
+Exercício 3: Filtrar Estudantes por Curso(s) (Todos os Cursos)
+Objetivo: Criar uma função para filtrar estudantes que estão matriculados em todos os cursos informados.
+Função: filtrar_por_cursos_todos(estudantes, cursos)
+
+Exercício 4: Filtrar Estudantes por Data de Nascimento (Antes de uma Data)
+Objetivo: Criar uma função para filtrar estudantes que nasceram antes da data informada.
+Função: filtrar_por_data_nascimento_antes(estudantes, data)
