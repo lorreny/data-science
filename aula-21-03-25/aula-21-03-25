@@ -67,10 +67,24 @@ def gerar_lista_convidados(local, data, **kwargs):
 te convido a festa no local {local},
 na data {data}
 a onde voce será {cargo}
+"""
+
+def funcao_generica(param_pos_obg_1, param_pos_obg_n,#1,2,3,4
+                    *param_pos_multi,#args
+                    param_def_nomeados_1, param_def_nomeados_n,# nome=valor
+                    **param_nomeados_multi):#kwargs
+    pass
+
+
+
 """)
         
 print()
 gerar_lista_convidados("minha casa", "daqui a pouco depois de nunca", churasqueiro="Maaaaath", garcon="birunda", bargirl="Marcele")
 
 
-https://dontpad.com/dfs6202103
+def funcao_calcular_media_qualquer_generica(**kwargs):
+   if len(kwargs) == 0:
+      return 0
+   resultado = sum(kwargs)/len(kwargs)
+   return resultado
