@@ -1,1 +1,48 @@
+def elevar_quadrado(valor):
+    return valor**2
 
+"""crie uma função que receba um nome e uma nota
+caso a nota seja maior ou igual a 6 retorne
+que o aluno foi aprovado e caso seja menor
+que o aluno foi reprovado """
+
+
+def verificar_aprovacao(nota:float|int, 
+                        nome:str = "Aluno Desconhecido")-> bool:
+    """verifica a nota do aluno, 
+    para saber se o mesmo foi aprovado
+
+    Args:
+        nota (float | int): nota do aluno
+        nome (str, optional): nome do aluno. Defaults to "Aluno Desconhecido".
+
+    Returns:
+        bool: true se aluno qaprovado
+    """
+    if nota >= 6:
+        print(f"o {nome} foi aprovado")
+        return True
+    else:
+        print(f"o {nome} foi reprovado")
+        return False
+
+
+# def verificar_aprovacao2(nota, nome="Aluno Desconhecido"):
+#     if nota >= 6:
+#         print(f"o {nome} foi aprovado")
+#         return True
+#     print(f"o {nome} foi reprovado")
+#     return False
+
+# aluno = input("digite o nome: ")
+# nota_do_aluno = float(input("digite a nota: "))
+# verificar_aprovacao(aluno, nota_do_aluno)
+
+#mais condensado e confuso
+# verificar_aprovacao(input("digite o nome: "), 
+#                     float(input("digite a nota: ")))
+
+verificar_aprovacao(7.8, "Luiz")
+verificar_aprovacao(5.4)
+
+verificar_aprovacao(8.5,"walter")
