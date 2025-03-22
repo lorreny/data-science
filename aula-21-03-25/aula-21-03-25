@@ -1,10 +1,7 @@
 def elevar_quadrado(valor):
     return valor**2
 
-"""crie uma função que receba um nome e uma nota
-caso a nota seja maior ou igual a 6 retorne
-que o aluno foi aprovado e caso seja menor
-que o aluno foi reprovado """
+#crie uma função que receba um nome e uma nota caso a nota seja maior ou igual a 6 retorne que o aluno foi aprovado e caso seja menor que o aluno foi reprovado """
 
 
 def verificar_aprovacao(nota:float|int, 
@@ -46,3 +43,34 @@ verificar_aprovacao(7.8, "Luiz")
 verificar_aprovacao(5.4)
 
 verificar_aprovacao(8.5,"walter")
+
+""" façam uma função para calcular a media de alguns numeros"""
+
+def calcular_media(n1, n2 ,n3):
+    soma = n1+n2+n3
+    return soma/3
+
+def calcular_qualquer_media(*args):
+    return sum(args)/len(args)
+
+print(calcular_qualquer_media(1,2,3))
+print(calcular_qualquer_media(7,14))
+print(calcular_qualquer_media(50,78,51,78,312,65,98))
+
+print("--TESTE1--", "--TESTE2--", "--TESTE3--",sep="||", end="_uwu_")
+print("--TESTE1--", "--TESTE2--", "--TESTE3--",sep="||", end="_uwu_")
+print("--TESTE1--", "--TESTE2--", "--TESTE3--",sep="||", end="_uwu_")
+
+def gerar_lista_convidados(local, data, **kwargs):
+    for cargo in kwargs:
+        print(f"""Olá, {kwargs[cargo]}:
+te convido a festa no local {local},
+na data {data}
+a onde voce será {cargo}
+""")
+        
+print()
+gerar_lista_convidados("minha casa", "daqui a pouco depois de nunca", churasqueiro="Maaaaath", garcon="birunda", bargirl="Marcele")
+
+
+https://dontpad.com/dfs6202103
