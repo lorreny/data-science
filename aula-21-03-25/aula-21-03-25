@@ -6,6 +6,7 @@ def elevar_quadrado(valor):
 
 def verificar_aprovacao(nota:float|int, 
                         nome:str = "Aluno Desconhecido")-> bool:
+
     """verifica a nota do aluno, 
     para saber se o mesmo foi aprovado
 
@@ -14,7 +15,7 @@ def verificar_aprovacao(nota:float|int,
         nome (str, optional): nome do aluno. Defaults to "Aluno Desconhecido".
 
     Returns:
-        bool: true se aluno qaprovado
+        bool: true se aluno aprovado
     """
     if nota >= 6:
         print(f"o {nome} foi aprovado")
@@ -67,7 +68,7 @@ def gerar_lista_convidados(local, data, **kwargs):
 te convido a festa no local {local},
 na data {data}
 a onde voce será {cargo}
-"""
+""")
 
 def funcao_generica(param_pos_obg_1, param_pos_obg_n,#1,2,3,4
                     *param_pos_multi,#args
@@ -77,14 +78,6 @@ def funcao_generica(param_pos_obg_1, param_pos_obg_n,#1,2,3,4
 
 
 
-dica de estudo do Walter:
-list comprehension
-decorador
-gerador
-
-
-
-""")
         
 print()
 gerar_lista_convidados("minha casa", "daqui a pouco depois de nunca", churasqueiro="Maaaaath", garcon="birunda", bargirl="Marcele")
@@ -96,4 +89,29 @@ def funcao_calcular_media_qualquer_generica(**kwargs):
    resultado = sum(kwargs)/len(kwargs)
    return resultado
 
-https://dontpad.com/dfs6202103
+
+
+
+
+dica de estudo do Walter:
+list comprehension
+decorador
+gerador
+
+def eh_par_ou_impar(numero):
+    return "impar" if numero%2 else "par"
+
+print(eh_par_ou_impar(7))
+print(eh_par_ou_impar(6))
+
+
+DESAFIO DO WALTER:
+
+https://1drv.ms/b/c/2c68f38d8388bcfc/Efy8iION82gggCw5_AgAAAABPtVDG-7YnMfWGFT4_sw9BA?e=xIb9EN
+
+enviar todas as respostas em pasta compactada para o e-mail: walterinfinity@outlook.com
+
+Premios
+1° = R$30,00
+2° = R$20,00
+3° = R$10,00
