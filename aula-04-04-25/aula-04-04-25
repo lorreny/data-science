@@ -1,1 +1,302 @@
+Repositório de aulas:
+https://github.com/thiagooshiro/python-classes
 
+Para clonar o repositório:
+git clone https://github.com/thiagooshiro/python-classes.git
+
+
+Boa noite pessoal tudo bem ? Marcos Monitor de voces aqui tokken de hoje 4857
+
+Repostorio de ideais de projetos do Marcos https://github.com/DevWizardMarcos/Exercios-Do-Monitor-Marcos/tree/main/Lista%20De%20Exercios%20Do%20Monitor%20Marrcos
+
+
+### **Proposta 1: Jogo de Pedra, Papel e Tesoura**  
+
+**Objetivo:**  
+Criar um jogo interativo em Python onde o usuário pode desafiar o computador em partidas de Pedra, Papel e Tesoura. O objetivo principal é implementar as regras do jogo, criar uma interação fluida com o usuário e aplicar conceitos de funções e loops para um funcionamento contínuo.  
+
+---
+
+**Instruções Detalhadas:**  
+1. **Apresentação do Jogo:**  
+   - Ao iniciar o programa, exiba uma mensagem de boas-vindas com uma breve explicação do jogo.  
+   - Informe ao jogador as regras básicas e como encerrar o jogo caso deseje sair.  
+
+2. **Escolha das Opções:**  
+   - Exiba um menu onde o jogador possa selecionar uma das três opções:  
+     1. Pedra  
+     2. Papel  
+     3. Tesoura  
+   - O jogador deve inserir sua escolha digitando o número correspondente ou o nome da opção.  
+   - Valide a entrada do jogador e, caso seja inválida, peça para que ele digite novamente.  
+
+3. **Escolha do Computador:**  
+   - O computador deve selecionar uma das opções (pedra, papel ou tesoura) de forma aleatória.  
+   - Utilize a função `random.choice()` para garantir que a seleção seja imprevisível.  
+
+4. **Regras do Jogo:**  
+   - Implemente a lógica para determinar o vencedor da rodada com base nas regras:  
+     - Pedra ganha de tesoura, mas perde para papel.  
+     - Tesoura ganha de papel, mas perde para pedra.  
+     - Papel ganha de pedra, mas perde para tesoura.  
+   - Caso o jogador e o computador façam a mesma escolha, declare um empate.  
+
+5. **Exibição dos Resultados:**  
+   - Após cada rodada, exiba:  
+     - A escolha do jogador e do computador.  
+     - O vencedor da rodada ou se houve empate.  
+
+6. **Funcionamento Contínuo:**  
+   - Após exibir o resultado, pergunte ao jogador se ele deseja jogar novamente ou encerrar o jogo.  
+   - Se o jogador optar por continuar, inicie uma nova rodada.  
+   - Se o jogador decidir sair, encerre o programa com uma mensagem de despedida e exiba um resumo (veja o próximo passo).  
+
+7. **Contagem de Pontuações (Opcional):**  
+   - Adicione um contador para rastrear:  
+     - Quantas rodadas foram jogadas.  
+     - Quantas vitórias o jogador teve.  
+     - Quantas vitórias o computador teve.  
+     - Quantos empates ocorreram.  
+   - Exiba esse resumo no final do jogo, antes de encerrar.  
+
+---
+
+**Desafio Extra:**  
+- Antes de começar o jogo, ofereça ao jogador a opção de jogar partidas "melhor de 3" ou "melhor de 5":  
+  - Defina que o vencedor geral será quem ganhar o número necessário de rodadas (ex.: 2 vitórias para melhor de 3).  
+  - Mostre o placar atualizado ao final de cada rodada.  
+  - Caso o jogador escolha não ativar o modo “melhor de X”, permita que ele jogue rodadas ilimitadas, encerrando o jogo apenas quando desejar.  
+
+---
+
+**Dicas e Sugestões:**  
+- Organize seu código utilizando funções para tarefas como:  
+  - Mostrar o menu inicial.  
+  - Receber e validar a escolha do jogador.  
+  - Determinar a escolha do computador.  
+  - Calcular o vencedor da rodada.  
+  - Atualizar e exibir o placar.  
+- Use loops para garantir que o jogo funcione de forma contínua até que o jogador escolha sair.  
+- Para um programa mais interativo, utilize mensagens criativas e divertidas que tornem o jogo mais envolvente.  
+
+---
+
+**Exemplo de Saída:**  
+```
+Bem-vindo ao jogo de Pedra, Papel e Tesoura!
+Regras:
+- Pedra ganha de Tesoura.
+- Tesoura ganha de Papel.
+- Papel ganha de Pedra.
+Digite "sair" a qualquer momento para encerrar.
+
+Escolha uma opção:
+1 - Pedra
+2 - Papel
+3 - Tesoura
+
+Sua escolha: Pedra
+Escolha do computador: Tesoura
+Você ganhou esta rodada!
+
+Deseja jogar novamente? (sim/não): sim
+
+Escolha uma opção:
+1 - Pedra
+2 - Papel
+3 - Tesoura
+```
+
+
+
+
+
+PROJETO DA APOSTILA (LISTA DE TAREFAS):
+
+Requisitos do Projeto: Gerenciador de Tarefas
+1. Funcionalidades Principais
+
+O programa de linha de comando deve permitir ao usuário realizar as seguintes ações:
+
+    Adicionar Tarefa:
+
+        O usuário pode adicionar uma nova tarefa à lista.
+
+        Cada tarefa deve ter:
+
+            Descrição: Texto descritivo da tarefa.
+
+            Prioridade: A prioridade da tarefa (Exemplo: "Baixa", "Média", "Alta").
+
+            Categoria: Categoria que a tarefa pertence (Exemplo: "Trabalho", "Pessoal", "Estudos").
+
+            Data de Conclusão (opcional): Quando a tarefa deve ser concluída.
+
+    Visualizar Tarefas:
+
+        O usuário pode visualizar todas as tarefas.
+
+        O sistema pode exibir as tarefas de acordo com a prioridade ou categoria.
+
+    Editar Tarefa:
+
+        O usuário pode editar uma tarefa existente (alterar descrição, prioridade, categoria ou data de conclusão).
+
+    Excluir Tarefa:
+
+        O usuário pode excluir uma tarefa da lista.
+
+    Filtrar Tarefas:
+
+        O usuário pode visualizar tarefas filtradas por:
+
+            Prioridade (exibir apenas tarefas de uma certa prioridade).
+
+            Categoria (exibir apenas tarefas de uma certa categoria).
+
+            Tarefas Concluídas/Não Concluídas.
+
+2. Estruturas de Dados
+
+O sistema deve utilizar diferentes estruturas de dados do Python para gerenciar as tarefas:
+
+    Dicionários: Para armazenar os detalhes das tarefas (descrição, prioridade, categoria, etc.).
+
+    Listas: Para armazenar a coleção de tarefas.
+
+    Tuplas: Para representar categorias ou prioridades, que são valores fixos e imutáveis.
+
+    Conjuntos: Para garantir que não haja duplicação de categorias ou prioridades.
+
+3. Organização do Código
+
+O projeto deve ser estruturado em várias funções e módulos. Aqui estão algumas sugestões de funções principais que podem ser criadas:
+
+    Função adicionar_tarefa(): Para adicionar uma nova tarefa.
+
+    Função visualizar_tarefas(): Para exibir todas as tarefas ou as filtradas.
+
+    Função editar_tarefa(): Para modificar uma tarefa existente. (OPCIONAL/EXTRA)
+
+    Função excluir_tarefa(): Para remover uma tarefa.
+
+    Função filtrar_tarefas(): Para filtrar tarefas com base em prioridade, categoria ou status.  (OPCIONAL/EXTRA)
+
+4. Interface de Linha de Comando (CLI)
+
+    O programa será executado no terminal ou linha de comando.
+
+    O usuário interage com o sistema digitando comandos que acionam as funcionalidades mencionadas.
+
+    Exemplo de comandos do sistema:
+
+        adicionar: Adiciona uma tarefa.
+
+        exibir: Exibe todas as tarefas.
+
+        editar: Edita uma tarefa.
+
+        deletar: Exclui uma tarefa.
+
+        filtrar: Filtra tarefas por prioridade ou categoria.
+
+5. Detalhes Técnicos
+
+    Ambiente Virtual: O projeto deve ser desenvolvido dentro de um ambiente virtual Python para isolar as dependências do projeto.
+
+    Modularização: O código deve ser modular, ou seja, cada funcionalidade principal deve ser organizada em funções específicas dentro de módulos.
+
+    Laços de Repetição e Condicionais: O programa usará laços para iterar sobre listas de tarefas e aplicar condições para realizar filtros ou verificar ações do usuário.
+
+    Armazenamento Persistente (Opcional): Para manter as tarefas salvas entre execuções do programa, o sistema pode utilizar arquivos (como JSON ou CSV) para persistir as tarefas.
+
+Exemplos de Fluxo de Comandos
+
+    Adicionar uma Tarefa:
+
+
+Digite a descrição da tarefa: "Estudar para a prova"
+Escolha a prioridade (Baixa, Média, Alta): Alta
+Escolha a categoria (Trabalho, Pessoal, Estudos): Estudos
+Defina a data de conclusão (opcional): 2025-04-10
+Tarefa adicionada com sucesso!
+
+Visualizar Tarefas:
+
+Tarefa 1:
+Descrição: Estudar para a prova
+Prioridade: Alta
+Categoria: Estudos
+Concluir até: 2025-04-10
+
+Filtrar por Prioridade:
+
+Escolha a prioridade (Baixa, Média, Alta): Alta
+Tarefa 1:
+Descrição: Estudar para a prova
+Prioridade: Alta
+Categoria: Estudos
+Concluir até: 2025-04-10
+
+Editar Tarefa:
+
+Digite o número da tarefa a ser editada: 1
+Escolha o campo para editar (Descrição, Prioridade, Categoria, Data): Prioridade
+Digite a nova prioridade: Média
+Tarefa atualizada com sucesso!
+
+Excluir Tarefa:
+
+    
+    Digite o número da tarefa a ser excluída: 1
+    Tarefa excluída com sucesso!
+
+Considerações Finais
+
+    O código deve ser bem comentado e seguir boas práticas de programação.
+
+    A validação de entrada do usuário deve ser feita para garantir que os dados inseridos estejam no formato correto.
+
+    É importante que o programa seja fácil de usar, com mensagens claras ao usuário sobre o que está acontecendo.
+
+
+
+
+#####  Base Menu continuo: 
+
+
+from random import choice
+
+
+opcoes = ['pedra', 'papel', 'tesoura']
+
+
+def menu():
+    print('Seja bem vindo ao jogo de Pedra, Papel, Tesoura: ')
+    print('Lembre-se: Pedra vence tesoura, tesoura vence papel, papel vence pedra')
+
+    maquina = choice(opcoes)
+
+    while True:
+        escolha = input('Por favor faça sua escolha ou digite "sair" para sair do jogo: ').lower()
+
+        if escolha == 'sair':
+            print('Obrigado por jogar')
+            return
+        elif escolha not in opcoes:
+            escolha = input('Escolha inválida, digite novamente: ')
+            continue
+        else:
+            break
+
+    print('Você escolheu', escolha)
+    print('A máquina escolheu', maquina)
+
+
+    # Lógica do jogo
+
+    escolha = input('Deseja continuar jogando?s/n: ')
+    if escolha != 'n':
+        return menu()
+
+menu()
