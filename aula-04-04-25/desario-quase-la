@@ -1,0 +1,58 @@
+import random
+
+def regra():
+    print("Seja bem vindo ao Jogo Pedra, Papel e Tesoura...")
+    print("Seguem algumas regras do jogo:")
+    print("Pedra ganha de Tesoura (Pedra quebra Tesoura)")
+    print("Tesoura ganha de Papel (Tesoura corta Papel).")
+    print("Papel ganha de Pedra (Papel cobre Pedra).")
+
+def escolha_user():
+   while True:
+      print("Escolha uma das opções: ")
+      # Exemplo com o método .lower()
+      entrada_usuario = input("Digite sua escolha (Pedra, Papel ou Tesoura): ")
+      # Converte a entrada para minúscula
+      entrada_usuario = entrada_usuario.lower()
+      
+      if entrada_usuario == "pedra":
+         print("Você escolheu pedra")
+         return "pedra"
+      elif entrada_usuario == "papel":
+         print("Você escolheu papel")
+         return "papel"
+      elif entrada_usuario == "tesoura":
+         print("Você escolheu tesoura")
+         return "tesoura"
+      else:
+         print("Opção inválida! Tente novamente.")
+
+def escolha_computador():
+   opcoes = ["pedra", "papel", "tesoura"]
+   computador = random.choice(opcoes)
+   print(f"O computador escolheu: {computador}")
+   return computador
+
+
+def jogo():
+   regra()
+   if escolha_user() == escolha_computador():
+      print("empate")
+   elif escolha_user() == "pedra" and escolha_computador() == "tesoura":
+      print("o jogador ganhou")
+   elif escolha_user() == "tesoura" and escolha_computador == "papel":
+      print("O jogador ganhou")
+   elif escolha_user() == "papel" and escolha_computador == "pedra":
+      print("O jogador ganhou")
+
+escolha_user()
+escolha_computador()
+
+Se a escolha do jogador for igual à escolha do computador, o resultado é um empate.
+
+Se a escolha do jogador for "pedra" e o computador escolheu "tesoura", o jogador ganha.
+
+Se a escolha do jogador for "tesoura" e o computador escolheu "papel", o jogador ganha.
+
+Se a escolha do jogador for "papel" e o computador escolheu "pedra", o jogador ganha.
+   
