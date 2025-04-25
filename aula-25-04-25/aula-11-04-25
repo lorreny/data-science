@@ -1,0 +1,128 @@
+https://dontpad.com/dfs6201104
+
+DONTPAD: 
+DFS6201104
+
+REPO DE AULAS:
+https://github.com/thiagooshiro/python-classes
+(para clonar local:) https://github.com/thiagooshiro/python-classes.git
+
+
+Tokken de hoje 8702
+
+Resolução JanKenPo
+
+pontos_jogador = 0
+pontos_maquina = 0
+empates = 0
+partidas = 0
+
+def menu():
+    global pontos_jogador
+    global partidas
+    global pontos_maquina
+    global empates
+    print('Seja bem vindo ao jogo de Pedra, Papel, Tesoura: ')
+    print('Lembre-se: Pedra vence tesoura, tesoura vence papel, papel vence pedra')
+
+    escolha_maquina = choice(opcoes)
+
+    while True:
+        escolha_jogador = input('Por favor faça sua escolha_jogador ou digite "sair" para sair do jogo: ').lower()
+
+        if escolha_jogador == 'sair':
+            print('Obrigado por jogar')
+            return
+        elif escolha_jogador not in opcoes:
+            escolha_jogador = input('Escolha inválida, digite novamente: ')
+            continue
+        else:
+            break
+
+    
+    print('Você escolheu', escolha_jogador)
+    print('A máquina escolheu', escolha_maquina)
+
+    # Lógica do jogo
+
+    # Caso de Empate:
+    if escolha_jogador == escolha_maquina:
+        print('Vocês empataram!')
+        empates += 1
+    
+    # Condições de Vitória:
+
+    elif escolha_jogador == 'pedra' and escolha_maquina == 'tesoura' or escolha_jogador == 'tesoura' and escolha_maquina == 'papel' or escolha_maquina == 'papel' and escolha_maquina == 'pedra':
+        print('Parabéns! Você venceu!')
+        pontos_jogador += 1
+    else:
+        print('Você perdeu!')
+        pontos_maquina += 1
+
+    partidas += 1
+    escolha_jogador = input('Deseja continuar jogando?s/n: ')
+    if escolha_jogador != 'n':
+        return menu()
+    
+    
+    print('Você fez:', pontos_jogador)
+    print('A Máquina fez:', pontos_maquina)
+    print(f'Aconteceram {empates} empates')
+    print('Total de partidas:', partidas)
+
+
+
+menu()
+
+
+
+
+
+
+
+DESAFIO : 
+
+    "01": "Controle de Gastos Pessoais 💰 - O usuário insere seus gastos diários, e o programa calcula o total e avisa quando ultrapassa um orçamento definido.",
+
+
+   "02" Calculadora que divide uma conta entre amigos, considerando o valor total, o número de pessoas e o percentual de gorjeta.
+
+
+
+Exercício Calculadora Modular:
+O objetivo do exercício é criar o funcionamento de uma calculadora simples capaz de realizar soma, subtração, multiplicação e divisão.
+
+
+# Regras:
+# As funções das operações devem estar em um arquivo separado chamado operacoes.py
+# O arquivo principal com código da função menu deve ser chamado calculadora.py
+# Para utilizar as funções de oparação utilize importação do arquivo operacoes.py.
+
+
+def menu():
+    print('Bem vindo a calculadora')
+    print('Qual operação deseja executar?')
+    print('1 - Soma', '2 - Subtração', '3 - Multilpicação', '4 - Divisão', '5 - Sair', sep='\n')
+    oper = input('Escolha a operação: ')
+
+    if oper == '1':
+        # operChamar função pra somar
+        pass #pass é só pra não quebrar o código, remova-o quando implementar sua lógica.
+    elif oper == '2':
+        # Chamar a função de subtrair
+        pass
+
+    elif oper == '3':
+        # Chamar função de multiplicar;
+        pass
+
+    elif oper == '4':
+        # Chamar operação de divisão;
+        pass
+    elif oper == '5':
+        # Encerrar o programa com mensagem amigável
+        pass
+    else:
+        # Escolha fora das escolhas disponíveis
+        # Exibir mensagem de erro!
+        pass
