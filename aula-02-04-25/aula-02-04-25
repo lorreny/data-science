@@ -1,0 +1,112 @@
+dontpad: 
+dfs6200205
+
+repo de aulas:
+https://github.com/thiagooshiro/python-classes
+
+Boa noite pessoal tudo bem ? Marcos Monitor aqui Tokken de Hoje 2927
+
+
+
+class Carro():  # Definição da classe
+    def __init__(self, modelo, ano, cor, marca):
+        self.modelo = modelo
+        self.ano = ano
+        self. cor = cor
+        self.marca = marca
+
+    def __str__(self):
+        return f'{self.modelo}, {self.ano}, {self.cor}, {self.marca}'
+
+    def ligarCarro(self, combustivel):
+        print(f'Carro ligando com {combustivel}!')
+
+meuCarrinho = Carro('Uno', '2021', 'Amarelo', 'FIAT') # Objeto ou Instância da classe Carro
+
+print(meuCarrinho.modelo) #Imprime o valor contido na propriedade modelo do objeto "meuCarrinho"
+
+
+print(meuCarrinho) # 
+
+meuCarrinho.ligarCarro('gasolina') 
+
+sistema escolas
+sistema bibliotecas
+cafeteria
+
+
+Basicão da cafeteria (usaremos pelas próximas 4 aulas)
+
+class Cafeteira():
+    def __init__(self, nome, endereco, cnpj):
+        self.nome = nome
+        self.endereco = endereco
+        self.cnpj = cnpj
+
+    def cadastrar_cliente(self):
+        cliente_nome = input('Digite seu nome')
+        cliente_sobrenome = input('Digite seu sobrenome')
+        cliente_endereco = input('Digite seu endereço')
+        cliente_email = input('Digite seu e-mail')
+        cliente_senha = input('Digite sua senha')
+
+        cliente = Cliente(cliente_nome, cliente_sobrenome, cliente_endereco, cliente_email, cliente_senha)
+
+        print(f'Cliente {cliente_nome} cadastrado com sucesso!')
+        return cliente
+
+class Cliente():
+    def __init__(self, nome, sobrenome, email, endereco, senha):
+        self.nome = nome
+        self.sobrenome = sobrenome
+        self.email = email
+        self.endereco = endereco
+        self.senha = senha
+
+    def __str__(self):
+        return f"""
+        Nome: {self.nome}
+        Sobrenome: {self.sobrenome}
+        Email: {self.email}
+        """
+
+
+
+class Produto():
+    def __init__(self, nome, tipo, tamanho, preco):
+        self.nome = nome
+        self.tipo = tipo
+        self.tamanho = tamanho
+        self.preco = preco
+
+
+meuCafe = Cafeteira('Meu Café', 'Rua Tretas', '000')
+
+print(meuCafe.cadastrar_cliente())
+
+
+
+REQUISITOS DE PROJETO PARTE 1
+
+O sistema  deve ser capaz de:
+1 - Cadastrar usuários;
+2 - Listar todos os usuários cadastrados;
+3 - Obter informações detalhadas de um usuário específico.
+4 - Alterar informações de um usuário
+5 - Deletar usuário
+
+O sistema também deve ser capaz de realizar as mesmas funcionalidades para "produtos":
+1 - Cadastrar produtos;
+2 - Listar todos os produtos cadastrados;
+3 - Obter informações detalhadas de um produto específico.
+4 - Alterar informações de um produto
+5 - Deletar produto
+
+
+
+
+
+
+
+ 
+
