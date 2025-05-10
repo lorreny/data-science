@@ -3,6 +3,7 @@
 from cliente import Cliente
 from produto import Produto
 import csv
+import os
 
 class Cafeteira():
     def __init__(self, nome, endereco, cnpj):
@@ -45,19 +46,28 @@ class Cafeteira():
         return produto
 
     def salvar_dados_csv(self):
-        with open('clientes.csv', 'w', newline='', encoding='utf-8') as file:
+        # Salvar dados de clientes
+        if not os.path.exists('clientes.csv'):  # Se o arquivo não existir
+            with open('clientes.csv', 'w', newline='', encoding='utf-8') as file:
+                writer = csv.writer(file)
+                writer.writerow(['Nome', 'Sobrenome', 'Email', 'Endereco', 'Senha'])  # Escreve o cabeçalho
+
+        with open('clientes.csv', 'a', newline='', encoding='utf-8') as file:
             writer = csv.writer(file)
-            writer.writerow(['Nome', 'Sobrenome', 'Email', 'Endereco', 'Senha'])
             for cliente in self.clientes:
                 writer.writerow([cliente.nome, cliente.sobrenome, cliente.email, cliente.endereco, cliente.senha])
-        
-        with open('produtos.csv', 'w', newline='', encoding='utf-8') as file:
+
+        # Salvar dados de produtos
+        if not os.path.exists('produtos.csv'):  # Se o arquivo não existir
+            with open('produtos.csv', 'w', newline='', encoding='utf-8') as file:
+                writer = csv.writer(file)
+                writer.writerow(['Nome Produto', 'Categoria', 'Preço', 'Desconto', 'Quantidade Estoque', 'Status'])  # Cabeçalho de produtos
+
+        with open('produtos.csv', 'a', newline='', encoding='utf-8') as file:
             writer = csv.writer(file)
-            writer.writerow(['Nome Produto', 'Categoria', 'Preço', 'Desconto', 'Quantidade Estoque', 'Status'])
             for produto in self.produtos:
                 writer.writerow([produto.nome_produto, produto.categoria, produto.preco, produto.desconto_promocao,
                                  produto.quantidade_em_estoque, produto.status])
-
     def carregar_dados_csv(self):
         # Método para carregar dados de um CSV
         pass
