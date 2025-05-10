@@ -45,6 +45,12 @@ class Cafeteira():
         print(f'O Produto {nome_produto} foi cadastrado com sucesso!')
         return produto
 
+    #definir registrar produto
+    def registrar_pedido(self, produto, cliente, quantidade, forma_pagamento)
+    pass
+    #validação
+    #menu
+
     def salvar_dados_csv(self):
         # Salvar dados de clientes
         if not os.path.exists('clientes.csv'):  # Se o arquivo não existir
