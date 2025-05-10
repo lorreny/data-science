@@ -16,3 +16,14 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+def main():
+    meuCafe = Cafeteira()
+    meuCafe.carregar_dados_csv()  # Carrega os dados do CSV para as listas de clientes e produtos
+    
+    # Agora, você pode continuar a interagir com o sistema normalmente
+    meuCafe.cadastrar_cliente()
+    meuCafe.cadastrar_produto()
+
+    # Salvar os dados de volta no CSV
+    meuCafe.salvar_dados_csv()
